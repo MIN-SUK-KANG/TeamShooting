@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class enemy : MonoBehaviour
 {
-    public float health;
-    public GameObject Item;
+    public float health;//적 체력
+    public GameObject Item;//적이 떨굴 아이템
     public void Init(float health)
     {
-        health = this.health;
+        this.health = health;
     }
     void Start()
     {
@@ -18,18 +18,21 @@ public class enemy : MonoBehaviour
     {
         
     }
-    public void Damage(int attack)
+    public void Damage(int attack)//데미지함수
     {
-        health -= attack;
-        if (health <= 0)
+        health -= attack; //적체력에 받는값만큼 깎음
+        if (health <= 0) //체력이 0일때
         {
-            ItemDrop();
-            Destroy(gameObject);
+            ItemDrop();//아이템 드랍
+            Destroy(gameObject);//적 제거
         }
     }
 
-    public void ItemDrop()
+    public void ItemDrop()//아이템 드롭인데 중간중간 가끔 체력회복 정도 나오면 좋겠음
     {
-        Instantiate(Item, transform.position, Quaternion.identity);
+        if (Item != null) // 드롭할 아이템이 존재하는지 확인
+        {
+            Instantiate(Item, transform.position, Quaternion.identity);//아이템 생성
+        }
     }
 }
