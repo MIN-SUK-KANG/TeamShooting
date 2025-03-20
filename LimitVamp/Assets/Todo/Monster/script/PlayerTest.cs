@@ -5,7 +5,6 @@ public class PlayerTest : MonoBehaviour
     public float speed = 4.0f;
     public int PlayerHp = 500;
 
-
     void Start()
     {
         
@@ -17,7 +16,5 @@ public class PlayerTest : MonoBehaviour
         float moveY = speed * Time.deltaTime * Input.GetAxisRaw("Vertical");
 
         transform.Translate(moveX, moveY, 0);
-
-
     }
 }
