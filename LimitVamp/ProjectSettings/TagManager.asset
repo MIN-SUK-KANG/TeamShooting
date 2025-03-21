@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - bullet
   - Item
+  - weppon
   layers:
   - Default
   - TransparentFX

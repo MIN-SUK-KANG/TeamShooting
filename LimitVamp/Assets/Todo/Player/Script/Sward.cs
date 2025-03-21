@@ -11,8 +11,10 @@ public class Sward : MonoBehaviour
     }
     void Update()
     {
-        
-        transform.RotateAround(arrow_center.transform.position, Vector3.forward, speed * Time.deltaTime);
+        if (arrow_center != null) // 🔥 중심이 설정된 경우에만 회전
+        {
+            transform.RotateAround(arrow_center.transform.position, Vector3.forward, speed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
