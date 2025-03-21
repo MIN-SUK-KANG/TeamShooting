@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6960045401261561110}
   - component: {fileID: 3694892130825657444}
   - component: {fileID: 6166402013100440500}
-  - component: {fileID: 4142995729223374621}
+  - component: {fileID: 9156318093730951329}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_Size: {x: 0.65625, y: 0.28125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &6166402013100440500
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.65625, y: 0.12717986}
   m_EdgeRadius: 0
---- !u!114 &4142995729223374621
+--- !u!114 &9156318093730951329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3280752642506774948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81a9389817058664f85ac22ef0693eec, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ac61f24f15fba946ab973abecb83bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 7
+  damage: 0

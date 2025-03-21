@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4852955433404849107}
   - component: {fileID: 5825218682180074807}
-  - component: {fileID: 4059653245753996932}
+  - component: {fileID: 1380132184817398962}
   - component: {fileID: 5979838451553885774}
   - component: {fileID: 1263095366875293609}
-  - component: {fileID: 8357370240446468843}
+  - component: {fileID: 1764913979277799275}
   m_Layer: 0
   m_Name: FlyingEye
   m_TagString: Untagged
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -4795363162621231457, guid: c86068d9e8d607b4e89edbc1cf6722d6, type: 3}
+  m_Sprite: {fileID: -4795363162621231457, guid: 7e3b3ba1bfca4e149b23907eca7dc556, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4059653245753996932
+--- !u!95 &1380132184817398962
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -102,7 +102,7 @@ Animator:
   m_GameObject: {fileID: 5455758346990504178}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 75ce41abe49677048adc18706cb8dc99, type: 2}
+  m_Controller: {fileID: 9100000, guid: a3860843a39cb5146b902d41fe42318f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -178,7 +178,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8357370240446468843
+--- !u!114 &1764913979277799275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,16 +187,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5455758346990504178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48b99b68b60e6a44aa1a326ced1c5822, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e18c9a47ea95f045b4ba132d72f10b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0
   monsterHp: 0
   monsterMaxHp: 0
   animContrl:
-  - {fileID: 9100000, guid: 75ce41abe49677048adc18706cb8dc99, type: 2}
-  - {fileID: 9100000, guid: 5a5651dfcebf4f7438ff2adc73cd3eb4, type: 2}
-  target: {fileID: 0}
+  - {fileID: 9100000, guid: a3860843a39cb5146b902d41fe42318f, type: 2}
+  target: {fileID: 588672772064591068, guid: c01276a911f19eb4fbdb9303f41674c0, type: 3}
 --- !u!1 &8989881488684691403
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +280,6 @@ SpriteRenderer:
   m_Size: {x: 0.2, y: 0.11}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

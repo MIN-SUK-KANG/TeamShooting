@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\assets\\todo\\monster\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\monster\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\assets\\todo\\monster\\script\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\monster\\script\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\unityminiproject\\teamshooting\\limitvamp\\assets\\todo\\monster\\script\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\assets\\todo\\monster\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\monster\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\unityminiproject\\teamshooting\\limitvamp\\assets\\todo\\monster\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\monster\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\assets\\todo\\monster\\script\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\monster\\script\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\assets\\todo\\monster\\script\\playertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\monster\\script\\playertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\assets\\todo\\monster\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\monster\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\assets\\todo\\monster\\script\\poolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\Assets\\Todo\\Monster\\script\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Todo\\Monster\\script\\Bullet.cs",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "Assets\\Todo\\Monster\\script\\Bullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T17:12:20.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T17:12:20.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\Assets\\Todo\\Monster\\script\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Todo\\Monster\\script\\GameManager.cs",
@@ -68,13 +67,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SpawnManager.cs",
               "DocumentMoniker": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\Assets\\Todo\\Monster\\script\\SpawnManager.cs",
               "RelativeDocumentMoniker": "Assets\\Todo\\Monster\\script\\SpawnManager.cs",
               "ToolTip": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\Assets\\Todo\\Monster\\script\\SpawnManager.cs",
               "RelativeToolTip": "Assets\\Todo\\Monster\\script\\SpawnManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T11:44:37.613Z",
               "EditorCaption": ""
@@ -89,12 +88,11 @@
               "RelativeToolTip": "Assets\\Todo\\Monster\\script\\PoolManager.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwCgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T17:55:32.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T17:55:32.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerTest.cs",
               "DocumentMoniker": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\Assets\\Todo\\Monster\\script\\PlayerTest.cs",
               "RelativeDocumentMoniker": "Assets\\Todo\\Monster\\script\\PlayerTest.cs",
@@ -102,12 +100,11 @@
               "RelativeToolTip": "Assets\\Todo\\Monster\\script\\PlayerTest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T17:15:51.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T17:15:51.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\Assets\\Todo\\Monster\\script\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Todo\\Monster\\script\\Enemy.cs",
@@ -120,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TestScript.cs",
               "DocumentMoniker": "C:\\UnityMiniProject\\TeamShooting\\LimitVamp\\Assets\\Todo\\Inventory\\TestScript.cs",
               "RelativeDocumentMoniker": "Assets\\Todo\\Inventory\\TestScript.cs",
@@ -128,8 +125,7 @@
               "RelativeToolTip": "Assets\\Todo\\Inventory\\TestScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T22:27:46.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T22:27:46.061Z"
             }
           ]
         }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8482660133907349612}
   - component: {fileID: 6160078286683915824}
   - component: {fileID: 4961178881613460543}
-  - component: {fileID: 8865208212182407024}
+  - component: {fileID: 8542659361238559550}
   m_Layer: 0
   m_Name: Player_test
   m_TagString: Player
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_Size: {x: 0.17, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &8482660133907349612
@@ -177,7 +177,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.092698455, y: 0.000000029802322}
   m_Size: {x: 0.5466229, y: 0.8651659}
   m_Direction: 0
---- !u!114 &8865208212182407024
+--- !u!114 &8542659361238559550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +186,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 588672772064591068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e20a755a76f4f342a6b2e0fcad61a16, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bf1e4ce30f80894284740fe8d26aac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
+  PlayerHp: 500
