@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3155449600787003510}
   - component: {fileID: 7623284108738640616}
-  - component: {fileID: 3731316809108889561}
+  - component: {fileID: 3532558757327214432}
   m_Layer: 0
   m_Name: Slowzone
   m_TagString: Untagged
@@ -69,7 +69,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.18301079
---- !u!114 &3731316809108889561
+--- !u!114 &3532558757327214432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6054393750717293049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a114b5328241f5b428077dbe8bbf0ed9, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b688d37a202607438472512ebea1de3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slowMultiplier: 0.5
