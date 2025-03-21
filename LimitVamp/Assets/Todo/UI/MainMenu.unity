@@ -201,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 1111030989}
     - target: {fileID: 2073591260165107482, guid: 325b775b0e601dc43931edc9f3ce99ea, type: 3}
       propertyPath: m_Name
-      value: UI_Canvas
+      value: UI_Main
       objectReference: {fileID: 0}
     - target: {fileID: 5474435905366236917, guid: 325b775b0e601dc43931edc9f3ce99ea, type: 3}
       propertyPath: m_Pivot.x
