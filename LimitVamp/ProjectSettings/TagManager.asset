@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Bullet
+  serializedVersion: 3
+  tags:
   - Enemy
   - bullet
   - Item
