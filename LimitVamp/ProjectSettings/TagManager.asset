@@ -11,6 +11,11 @@ TagManager:
   - bullet
   - Item
   - weppon
+  serializedVersion: 3
+  tags:
+  - Item_money
+  - Item_heal
+  - Item_powerup
   layers:
   - Default
   - TransparentFX
