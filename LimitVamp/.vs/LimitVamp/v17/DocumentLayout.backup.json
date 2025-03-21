@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\",
+  "WorkspaceRootPath": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\player\\script\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\player\\script\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\player\\script\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\player\\script\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\users\\yeonwoo\\documents\\github\\teamshooting\\limitvamp\\assets\\todo\\player\\script\\sward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\player\\script\\sward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\assets\\todo\\player\\script\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\todo\\player\\script\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Sward.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Sward.cs",
-              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\Sward.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Sward.cs",
-              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\Sward.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAowBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T17:10:29.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Launcher.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Launcher.cs",
-              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\Launcher.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Launcher.cs",
-              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\Launcher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:21:07.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "enemy.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\enemy.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\enemy.cs",
-              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\enemy.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T07:42:16.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Bullet.cs",
-              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\Bullet.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Bullet.cs",
-              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\Bullet.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T07:38:04.001Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\Player.cs",
-              "ToolTip": "C:\\Users\\yeonwoo\\Documents\\GitHub\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Player.cs",
-              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\Player.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAADwv0wAAAAJAAAAAAAAAA==",
+              "Title": "Launcher.cs",
+              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Launcher.cs",
+              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\Launcher.cs",
+              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Launcher.cs",
+              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\Launcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T15:11:25.882Z",
+              "WhenOpened": "2025-03-21T07:39:33.069Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "enemy.cs",
+              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\enemy.cs",
+              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\enemy.cs",
+              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\enemy.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T07:39:33.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\Bullet.cs",
+              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\Bullet.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T07:39:33.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Todo\\Player\\Script\\Player.cs",
+              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Todo\\Player\\Script\\Player.cs",
+              "RelativeToolTip": "Assets\\Todo\\Player\\Script\\Player.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAswHYAAAAbAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVDhPYxgFCHDx8cX/cavj/mtO0Pyv2qf6P3Jl5H\u002BoFMPbj2//q09QB/OR2SDACCIuP7n8P2JtBIOZtBlDokEiAz87P8ONNzcYwg3DGUEaTOaYgBUjAzZmNoabBTfB\u002BhlS16f\u002B91rg9f/Lly9wk5EBPhcwgYhTT08xeKh4MPDw8EBMJAGADWBlYgVjbADmhV9/fzEo9irC2ciuYIheGf0/bHkYVueDAD4vgJ188v7J/1Froxg8VD0YwrTCGFiZWRkuv7rMkG6RTtBLcAV7bu75P/X0VIa77\u002B8ycLJyMjjIOTB0enWSHCYjDzAwAADfwHLttPx8VwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-21T07:39:33.074Z"
             }
           ]
         }
