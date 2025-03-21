@@ -26,6 +26,10 @@ public class InGameOption : MonoBehaviour
     //}
     public void Exit()
     {
+        #if UNITY_EDITOR //에디터 테스트
+        UnityEditor.EditorApplication.isPlaying = false;
+        #else
         Application.Quit();
+        #endif
     }
 }

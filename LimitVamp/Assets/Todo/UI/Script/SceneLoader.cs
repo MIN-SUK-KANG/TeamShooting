@@ -1,16 +1,16 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
-namespace Ilumisoft.Minesweeper
+namespace UI
 {
     public class SceneLoader : MonoBehaviour
     {
         [SerializeField]
         PlayableDirector playableDirector = null;
 
-        public void LoadScene(string name)
+        public void LoadScene(string name) //입력한 이름의 씬 로드
         {
             StopAllCoroutines();
             StartCoroutine(LoadSceneCoroutine(name));

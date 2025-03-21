@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Ilumisoft.Minesweeper.UI
+namespace UI
 {
     public class Timer : MonoBehaviour
     {
