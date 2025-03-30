@@ -3,27 +3,31 @@
   "WorkspaceRootPath": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\player\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\script\\player\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\ui\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\script\\ui\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\ingamestatup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\script\\ingamestatup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ingamestatup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\ui\\ingameoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\script\\ui\\ingameoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\ingameoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\script\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,11 +38,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 174,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Enemy\\Enemy.cs",
+              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Script\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T04:06:28.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InGameOption.cs",
               "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\UI\\InGameOption.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI\\InGameOption.cs",
@@ -46,12 +67,11 @@
               "RelativeToolTip": "Assets\\Script\\UI\\InGameOption.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAADwvxgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T09:37:13.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T09:37:13.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "InGameStatUp.cs",
               "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\InGameStatUp.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\InGameStatUp.cs",
@@ -59,12 +79,11 @@
               "RelativeToolTip": "Assets\\Script\\InGameStatUp.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T09:14:56.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T09:14:56.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Timer.cs",
               "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\UI\\Timer.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI\\Timer.cs",
@@ -72,12 +91,11 @@
               "RelativeToolTip": "Assets\\Script\\UI\\Timer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T09:08:37.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T09:08:37.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Launcher.cs",
               "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Launcher.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Player\\Launcher.cs",
@@ -85,16 +103,11 @@
               "RelativeToolTip": "Assets\\Script\\Player\\Launcher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T08:44:25.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-03-29T08:44:25.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Player\\Bullet.cs",
@@ -102,12 +115,11 @@
               "RelativeToolTip": "Assets\\Script\\Player\\Bullet.cs",
               "ViewState": "AgIAABEAAAAAAAAAAADwvzwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T07:49:27.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T07:49:27.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Player\\Player.cs",

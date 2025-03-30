@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.UI;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -14,10 +16,10 @@ public class Player : MonoBehaviour
     public RaycastHit2D[] targets; //조건에 부합하는 대상들을 저장할 배열
     public Transform nearestTarget; //제일가까운 적의 좌표 저장변수
 
-    public int EXP = 100; //요구 경험치
-    public int EXP_UP = 0;//현재 경험치
-
     public float HP = 100;//체력
+    public float MHP = 100;//최대체력
+    public Slider HPBar;
+
     private float damageCooldown = 0.1f; // 체력이 깎이는 간격 (1초)
     private float lastDamageTime; // 마지막으로 피해를 받은 시간
     private bool isTakingDamage = false; // 적과 충돌 여부
@@ -35,7 +37,7 @@ public class Player : MonoBehaviour
     }
     private void Start()
     {
-        
+        HPBar.value = 1;
     }
 
     void Update()
@@ -110,6 +112,7 @@ public class Player : MonoBehaviour
         {
             HP -= 1;
             lastDamageTime = Time.time;
+            HPBar.value = HP / MHP;
             Debug.Log($"HP 감소! 현재 HP: {HP}");
 
             if (HP <= 0)
@@ -150,18 +153,6 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)//아이템과 충돌했을때
     {
-        if (collision.CompareTag("Item"))//태그가 아이템일시
-        {
-            (string, int) itemValue = collision.GetComponent<Item>().ReturnItemData(); //아이템의 정보를 가져옴
-            if (itemValue.Item1 == "EXP")
-            {
-            }
-            //추후에 선택 후 선택 능력 증가로 변경 내의견으로는
-            //근접무기강화(무기 개수증가), 원거리무기 강화(공속 증가), 
-            //공격속도(근접무기 도는속도 증가), 공격력증가, 체력증가 정도?
-            // 이중에서 하나 선택하면 그 능력이 강화로 해도 될듯합니다
-
-        }
         if (collision.CompareTag("Enemy"))
         {
             isTakingDamage = true; // 적과 충돌 시작

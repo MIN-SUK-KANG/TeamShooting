@@ -1,6 +1,6 @@
+using UI;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
 public class InGameStatUp : MonoBehaviour
 {
     public Player player;
@@ -8,6 +8,12 @@ public class InGameStatUp : MonoBehaviour
     public Bullet bullet;
 
     public GameObject UI_store;
+    private Timer timer;
+
+    private void Awake()
+    {
+        timer = GameObject.Find("Timer").GetComponent<Timer>();
+    }
 
     public void Speed_Up()//이동속도
     {
@@ -30,12 +36,14 @@ public class InGameStatUp : MonoBehaviour
     }
     public void Player_HP()
     {
+        player.MHP += 10;
         player.HP += 10;
         EditorUtility.SetDirty(player);
         Debug.Log("HP");
     }
     public void StoreOff()
     {
+        timer.CloseShop();
         UI_store.SetActive(false);
         Time.timeScale = 1f;
     }

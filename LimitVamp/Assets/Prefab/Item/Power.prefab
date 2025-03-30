@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1427636059151141293}
   - component: {fileID: 5216762470054721096}
   - component: {fileID: 6722747843985471214}
-  - component: {fileID: -5596049156895087178}
   m_Layer: 0
   m_Name: Power
   m_TagString: Item_powerup
@@ -274,17 +273,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-5596049156895087178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435089476495636441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d66d87f1b76c2a54aa78dcc0fcf454eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 8008711463727115302}
-  source: {fileID: 6722747843985471214}

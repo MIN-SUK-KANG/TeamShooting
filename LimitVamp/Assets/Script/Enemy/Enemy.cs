@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -22,7 +23,9 @@ public class Enemy : MonoBehaviour
     //드랍할 아이템 오브젝트 관련
     private System.Random rand = new System.Random();
 
-    [SerializeField] private GameObject[] items; //아이템 오브젝트, 0 = 돈, 1 = 체력 회복, 2 = 파워업
+    public Slider HPBar;
+
+    [SerializeField] private GameObject item; //아이템 오브젝트. 코인.
     private float distance = 1f;
     private float spread = 20f;
 
@@ -43,6 +46,7 @@ public class Enemy : MonoBehaviour
         rigid.simulated = true;
         monsterHp = monsterMaxHp;
         ani.SetBool("Death", false);
+        HPBar.value = 1;
     }
     public void Init(SpawnData data)
     {
@@ -94,6 +98,7 @@ public class Enemy : MonoBehaviour
     {
         //총알일 경우 피해를 입고 넉백 코루틴 실행
         monsterHp -= damage;
+        HPBar.value = monsterHp / monsterMaxHp;
         StartCoroutine("KnockBack");
 
 
@@ -114,17 +119,14 @@ public class Enemy : MonoBehaviour
     }
     public void ItemDrop()
     {
-        int first = rand.Next(1, 10);   //돈 1~9개 드랍
-        int second = rand.Next(0, 5);  //체력 회복 0~4개 드랍
-        int third = rand.Next(0, 4);   //파워업 0~3개 드랍
+        int count = rand.Next(2, 10);   //코인 2~9개 드랍
 
-        int count = first + second + third;
         float intervalAngle = 360 / count;  //드랍 아이템 사이의 각도
 
         //원형으로 몬스터 주위에 아이템 드랍시키기
         for (int i = 0; i < count; i++)
         {
-            float angle = i * intervalAngle;
+            float angle = i * intervalAngle +90;
             float radian = angle * Mathf.Deg2Rad;
             float x = Mathf.Cos(radian);
             float y = Mathf.Sin(radian);
@@ -132,26 +134,10 @@ public class Enemy : MonoBehaviour
             Vector2 itempos = new Vector2(x, y);
             Vector2 monsterpos = new Vector2(gameObject.GetComponent<Transform>().position.x, gameObject.GetComponent<Transform>().position.y);
 
-            if (first > 0)  //items[0]을 first에 저장된 랜덤값만큼 생성. 현재 1~9개, 코인
+            if (count > 0)  //코인을 저장된 랜덤값, 즉 2~9개 생성.
             {
-                GameObject item = Instantiate(items[0], (itempos * distance) + monsterpos, Quaternion.identity);
-                item.GetComponent<Rigidbody2D>().AddForce(itempos.normalized * spread);
-                first--;
-                continue;
-            }
-            if (second > 0) //items[1]을 second에 저장된 랜덤값만큼 생성. 현재 0~4개, 체력 회복
-            {
-                GameObject item = Instantiate(items[1], (itempos * distance) + monsterpos, Quaternion.identity);
-                item.GetComponent<Rigidbody2D>().AddForce(itempos.normalized * spread);
-                second--;
-                continue;
-            }
-            if (third > 0) //items[2]을 third에 저장된 랜덤값만큼 생성. 현재 0~3개, 파워업
-            {
-                GameObject item = Instantiate(items[2], (itempos * distance) + monsterpos, Quaternion.identity);
-                item.GetComponent<Rigidbody2D>().AddForce(itempos.normalized * spread);
-                third--;
-                continue;
+                GameObject todrop = Instantiate(item, (itempos * distance) + monsterpos, Quaternion.identity);
+                todrop.GetComponent<Rigidbody2D>().AddForce(itempos.normalized * spread);
             }
         }
     }

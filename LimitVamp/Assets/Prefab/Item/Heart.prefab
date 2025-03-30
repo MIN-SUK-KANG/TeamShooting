@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5292183802352569022}
   - component: {fileID: 7574500399113773406}
   - component: {fileID: 965500873916536325}
-  - component: {fileID: -4567860726399212667}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Item_heal
@@ -274,17 +273,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-4567860726399212667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758343504959882389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d66d87f1b76c2a54aa78dcc0fcf454eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 5426015954669566547}
-  source: {fileID: 965500873916536325}

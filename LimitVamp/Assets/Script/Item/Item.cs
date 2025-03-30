@@ -1,23 +1,31 @@
 using System.Collections;
+using UI;
+using UnityEditor;
 using UnityEngine;
 
 
 //Instanciate를 몬스터에 집어넣어 아이템 오브젝트 인스턴스 생성하기
 public class Item : MonoBehaviour
 {
-    private (string, int) itemData;  //아이템 데이터. string은 아이템의 종류, int는 아이템의 가치
+    private int itemData;  //아이템 데이터.
+                           //기존에는 (string, int)로 string은 아이템의 종류, int는 아이템의 가치를 넣었지만
+                           //드랍 아이템을 코인만 사용하기로 했으므로 int만 쓰도록 변경
 
     private bool isFlickerEnabled = false; //깜빡임 효과 활성화 여부
     private float time = 0f;
 
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private AudioSource source;
+    [SerializeField] private Timer timer;
+
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>(); //아이템 생성시 해당 아이템 외형 가져오기
-        SetItemData(); //아이템의 종류와 현재 라운드에 따라 가치 설정... 현재는 무조건 10 할당하는 형태
         source = GetComponent<AudioSource>(); //아이템 획득시 효과음
+        timer = GameObject.Find("Timer").GetComponent<Timer>(); //타이머 스크립트 가져오기
+
+        SetItemData(); //아이템의 종류와 현재 라운드에 따라 가치 설정. 5*(라운드+1)로. 1라운드면 개당 10, 2라운드면 개당 15, 3라운드면 개당 20.
     }
     private void Update()
     {
@@ -38,35 +46,16 @@ public class Item : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             AudioSource.PlayClipAtPoint(source.clip, transform.position);   //1회 재생하는 음악 인스턴스 생성
+            timer.SetScore(itemData); //아이템 가치만큼 점수 증가
             Destroy(gameObject);
         }
-
-        //플레이어에게 아이템의 값을 전달, 플레이어 스크립트 내에서 받아서 처리
-        //itemData를 public으로 넣었고, 아이템 각각의 카테고리는 따로 Tag로 넣었음. Player가 값이랑 카테고리를 받아와서 처리하면 될듯.
 
     }
     private void SetItemData()
     {
-        if (true) //일단 전부 10으로 세팅해두기
-        {
-            itemData = ("item", 10);
-        }
-
-
-        //나중에 조건 분기 추가하기
-
-        //else if (false)
-        //{
-
-        //}
-        //else
-        //{
-        //    itemData = 50;
-        //}
-
-
+        itemData = 5 * (timer.GetRound() + 2); //아이템 가치 설정. 라운드 표기는 1부터 시작하나 스크립트에서는 0부터 시작하므로 +2.
     }
-    public (string, int) ReturnItemData()
+    public int ReturnItemData()
     {
         return itemData;
     }

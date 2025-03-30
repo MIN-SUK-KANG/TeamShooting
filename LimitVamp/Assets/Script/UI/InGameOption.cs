@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class InGameOption : MonoBehaviour
 {
     public GameObject UI_option;
     public GameObject UI_store;
-    Button button;
+
+    public Button button;
 
     private void Awake()
     {

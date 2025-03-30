@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,35 +10,54 @@ namespace UI
         public Slider Bar_Time;
 
         public Text round = null;
-        public Text Ntext = null;
+        public Text Score = null;
+        public Text TimeShow = null;
 
-        private int Nround = 1;
+        private int Nround = 0;
+        private int Nscore = 0;
 
-        private float maxTime = 10f;
-        public float elapsedTime = 0.0f;
+        private float[] RoundEndTime = { 10f, 30f, 60f };
+        private float elapsedTime = 0.0f;
 
         bool shopDisplayed = false;
 
         void Update()
         {
-            elapsedTime += Time.deltaTime;
-
-            Ntext.text = GetTime();
-            if (elapsedTime >= maxTime && !shopDisplayed)
+            if (elapsedTime > RoundEndTime.Last())
             {
-                Store.SetActive(true);
-                shopDisplayed = true;
+                elapsedTime = RoundEndTime.Last();
+                TimeShow.text = GetTime();
+            }
+            else
+            {
+                elapsedTime += Time.deltaTime;
 
-                Time.timeScale = 0;
-                Nround += 1;
+                if (elapsedTime >= RoundEndTime[Nround] && !shopDisplayed)
+                {
+                    Store.SetActive(true);
+                    shopDisplayed = true;
+
+                    Time.timeScale = 0;
+                    Nround += 1;
+                }
+
+                round.text = "Round: " + (Nround + 1);
+                if (Bar_Time != null)
+                {
+                    if (Nround == 0)
+                    {
+                        Bar_Time.value = elapsedTime / RoundEndTime[0];
+                    }
+                    else
+                    {
+                        Bar_Time.value = (elapsedTime - RoundEndTime[Nround - 1]) / (RoundEndTime[Nround] - RoundEndTime[Nround - 1]);
+                    }
+                }
+                TimeShow.text = GetTime();
             }
 
-            round.text = "Round: " + Nround;
+            Score.text = "Score: " + Nscore;
 
-            if (Bar_Time != null)
-            {
-                Bar_Time.value = elapsedTime / maxTime;
-            }
         }
 
         public string GetTime()
@@ -46,5 +66,20 @@ namespace UI
 
             return seconds;
         }
+        public int GetRound()
+        {
+            return Nround;
+        }
+
+        public void SetScore(int point)
+        {
+            Nscore += point;
+        }
+
+        public void CloseShop()
+        {
+            shopDisplayed = false;
+        }
+
     }
 }
