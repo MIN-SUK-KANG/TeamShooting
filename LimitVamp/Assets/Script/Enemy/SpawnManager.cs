@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UIElements;
+using System.Linq;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -8,6 +8,8 @@ public class SpawnManager : MonoBehaviour
 
     int level;      //몬스터 레벨
     float timer;
+
+    bool bossChk = false;   //보스 체크
 
     private void Awake()
     {
@@ -19,16 +21,35 @@ public class SpawnManager : MonoBehaviour
         //타이머를 통해 일정 시간이 지난 후 몬스터 레벨 상승(현재 120초)
         //10초마다 스폰 몬스터 레벨 상승(spawnData Array 내부에서 다음 내용으로)
         timer += Time.deltaTime;
-        level = Mathf.Min(Mathf.FloorToInt(GameManager.instance.gameTime / 10f), spawnData.Length - 1);
+        level = Mathf.Min(Mathf.FloorToInt( (GameManager.instance.gameTime) / 10f), spawnData.Length - 1);
+
+        //최종 레벨에 도달하는 경우
+        if (level >= spawnData.Length - 1)
+        {
+            switch (bossChk)
+            {
+                case false : //보스레벨 도달 시 1회 스폰 후 bossChk : true
+                    Debug.Log("보스 등장 시기");
+                    GameObject.FindGameObjectsWithTag("Enemy").ToList().ForEach(x => x.SetActive(false));
+                    Debug.Log("전 몬스터 제거");
+                    Debug.Log($"보스 스폰 {level}");
+                    bossChk = true;
+                    timer = 0;
+                    Spawn();
+                    break;
+                case true : //보스 스폰 이후(bossChk : true) 레벨 보정
+                    break;
+            }
+        }
+
         //레벨을 기준으로 스폰 몬스터 수준 결정
         //몬스터 스폰 최소시간보다 타이머가 더 크면 스폰, 타이머 리셋
         if (timer > spawnData[level].spawnTime)
         {
-            timer = 0;
             Debug.Log($"현재 난이도 {level}");
+            timer = 0;
             Spawn();
         }
-
     }
     public void Spawn()
     {

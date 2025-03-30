@@ -8,6 +8,7 @@ namespace UI
     {
         public GameObject Store = null;
         public Slider Bar_Time;
+        public Player player;
 
         public Text round = null;
         public Text Score = null;
@@ -23,41 +24,43 @@ namespace UI
 
         void Update()
         {
-            if (elapsedTime > RoundEndTime.Last())
+            if (player != null)
             {
-                elapsedTime = RoundEndTime.Last();
-                TimeShow.text = GetTime();
-            }
-            else
-            {
-                elapsedTime += Time.deltaTime;
-
-                if (elapsedTime >= RoundEndTime[Nround] && !shopDisplayed)
+                if (elapsedTime > RoundEndTime.Last())
                 {
-                    Store.SetActive(true);
-                    shopDisplayed = true;
+                    elapsedTime = RoundEndTime.Last();
+                    TimeShow.text = GetTime();
+                }
+                else
+                {
+                    elapsedTime += Time.deltaTime;
 
-                    Time.timeScale = 0;
-                    Nround += 1;
+                    if (elapsedTime >= RoundEndTime[Nround] && !shopDisplayed)
+                    {
+                        Store.SetActive(true);
+                        shopDisplayed = true;
+
+                        Time.timeScale = 0;
+                        Nround += 1;
+                    }
+
+                    round.text = "Round: " + (Nround + 1);
+                    if (Bar_Time != null)
+                    {
+                        if (Nround == 0)
+                        {
+                            Bar_Time.value = elapsedTime / RoundEndTime[0];
+                        }
+                        else
+                        {
+                            Bar_Time.value = (elapsedTime - RoundEndTime[Nround - 1]) / (RoundEndTime[Nround] - RoundEndTime[Nround - 1]);
+                        }
+                    }
+                    TimeShow.text = GetTime();
                 }
 
-                round.text = "Round: " + (Nround + 1);
-                if (Bar_Time != null)
-                {
-                    if (Nround == 0)
-                    {
-                        Bar_Time.value = elapsedTime / RoundEndTime[0];
-                    }
-                    else
-                    {
-                        Bar_Time.value = (elapsedTime - RoundEndTime[Nround - 1]) / (RoundEndTime[Nround] - RoundEndTime[Nround - 1]);
-                    }
-                }
-                TimeShow.text = GetTime();
+                Score.text = "Score: " + Nscore;
             }
-
-            Score.text = "Score: " + Nscore;
-
         }
 
         public string GetTime()

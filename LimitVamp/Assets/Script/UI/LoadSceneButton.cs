@@ -25,10 +25,12 @@ namespace UI
         {
             if (sceneLoader != null) //SceneLoader 유무확인
             {
+                Time.timeScale = 1f;
                 sceneLoader.LoadScene(sceneName);
             }
             else
             {
+                Time.timeScale = 1f;
                 SceneManager.LoadScene(sceneName);
             }
         }

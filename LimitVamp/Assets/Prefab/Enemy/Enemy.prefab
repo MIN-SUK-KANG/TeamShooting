@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 228869641095377308}
   - component: {fileID: 6149213350158400022}
   - component: {fileID: 2584169483261613314}
-  - component: {fileID: 9160659218058043838}
+  - component: {fileID: 102641444111684657}
   - component: {fileID: 5574277260110253454}
   m_Layer: 6
   m_Name: Enemy
@@ -243,8 +243,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &9160659218058043838
-CapsuleCollider2D:
+--- !u!58 &102641444111684657
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -278,8 +278,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
-  m_Direction: 0
+  m_Radius: 0.8
 --- !u!114 &5574277260110253454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,9 +295,9 @@ MonoBehaviour:
   - {fileID: 9100000, guid: b1de9060b05d822439d0f986c391f064, type: 2}
   - {fileID: 9100000, guid: 50aa162ecaddd0e47993d00e77ef71ba, type: 2}
   - {fileID: 9100000, guid: a30958a650a48bd4cac9d577bbf4f2f0, type: 2}
-  - {fileID: 9100000, guid: df4b3b37882874f4c944bedbba68379c, type: 2}
   - {fileID: 9100000, guid: 506e58c5aeefd9643adec50ec1fa01bf, type: 2}
   - {fileID: 9100000, guid: e4c9df1330745534ca3f013641ce6a88, type: 2}
+  - {fileID: 9100000, guid: 737efd5b1a2ce04419135053de1c9985, type: 2}
   target: {fileID: 0}
   HPBar: {fileID: 425000560342847369}
   item: {fileID: 161458030598553221, guid: dbb180e579b8763439ab14d295fd0322, type: 3}

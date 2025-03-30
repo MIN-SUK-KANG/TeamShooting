@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
@@ -17,7 +19,7 @@ public class Player : MonoBehaviour
     public Transform nearestTarget; //제일가까운 적의 좌표 저장변수
 
     public float HP = 100;//체력
-    public float MHP = 100;//최대체력
+    private float MHP;//최대체력
     public Slider HPBar;
 
     private float damageCooldown = 0.1f; // 체력이 깎이는 간격 (1초)
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
         spriter = GetComponent<SpriteRenderer>(); //플레이어의 스프라이트랜더러 정보를 가져옴
         ani = GetComponent<Animator>();// 플레이어 이동 애니메이션을 가져옴
         originalColor = spriter.color; // 원래 색상 저장
+        MHP = HP;
     }
     private void Start()
     {
@@ -119,6 +122,10 @@ public class Player : MonoBehaviour
             {
                 Debug.Log("플레이어 사망!");
                 HP = 0;
+
+                GameObject.Find("SpawnManager").SetActive(false);
+                GameObject.FindGameObjectsWithTag("Enemy").ToList().ForEach(x => x.SetActive(false));
+
                 Destroy(gameObject); // 플레이어 삭제
                 Instantiate(dead, transform.position, Quaternion.identity); // 묘지 생성
             }

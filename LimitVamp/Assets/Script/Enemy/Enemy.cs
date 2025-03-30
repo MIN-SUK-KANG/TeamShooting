@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class Enemy : MonoBehaviour
 {
@@ -11,14 +12,13 @@ public class Enemy : MonoBehaviour
 
     //몬스터 오브젝트의 컴포넌트 목록
     Rigidbody2D rigid;
-    Collider2D coll;
+    CircleCollider2D coll;
     Animator ani;
     SpriteRenderer spriter;
     [SerializeField] private RuntimeAnimatorController[] animContrl;
 
     //플레이어 오브젝트
     public GameObject target;
-    
 
     //드랍할 아이템 오브젝트 관련
     private System.Random rand = new System.Random();
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
-        coll = GetComponent<Collider2D>();
+        coll = GetComponent<CircleCollider2D>();
         ani = GetComponent<Animator>();
         spriter = GetComponent<SpriteRenderer>();
     }
@@ -55,6 +55,11 @@ public class Enemy : MonoBehaviour
         ani.runtimeAnimatorController = animContrl[data.spriteIndex];
         monsterMaxHp = monsterHp = data.monsterHp;
         speed = data.speed;
+
+        //몬스터 크기에 따라 콜라이더 크기 조정
+        if (spriter.size.x < spriter.size.y) coll.radius = spriter.size.x;
+        else coll.radius = spriter.size.y;
+
     }
 
 
@@ -67,14 +72,17 @@ public class Enemy : MonoBehaviour
         if (!isLive || ani.GetCurrentAnimatorStateInfo(0).IsName("Hit")) return;
 
         //그 외 이동
-        Vector2 dirVec = target.transform.position - transform.position;
-        Vector2 nextVec = dirVec.normalized * speed * Time.deltaTime;
-        rigid.MovePosition(rigid.position + nextVec);
+        if (target != null)
+        {
+            Vector2 dirVec = target.transform.position - transform.position;
+            Vector2 nextVec = dirVec.normalized * speed * Time.deltaTime;
+            rigid.MovePosition(rigid.position + nextVec);
+        }
 
     }
     private void LateUpdate()
     {
-        if (!isLive) return;
+        if (!isLive || target == null) return;
         //죽었으면 무시, 살아있다면 플레이어가 몬스터를 향해 바라보도록 설정
         spriter.flipX = target.transform.position.x < transform.position.x;
     }
@@ -106,10 +114,16 @@ public class Enemy : MonoBehaviour
         if (monsterHp > 0)
         {
             ani.SetTrigger("Hit");
+            //피격 사운드 추가
+            AudioManager.instance.PlaySfx(AudioManager.Sfx.Hit);
         }
         //몬스터 사망시 변수 처리, 물리연산 정지, 아이템 드랍 후 사망 모션 실행
         else
         {
+            //사망 사운드 추가
+            if(isLive)
+                AudioManager.instance.PlaySfx(AudioManager.Sfx.Death);
+            
             isLive = false;
             coll.enabled = false;
             rigid.simulated = false;
@@ -119,14 +133,14 @@ public class Enemy : MonoBehaviour
     }
     public void ItemDrop()
     {
-        int count = rand.Next(2, 10);   //코인 2~9개 드랍
+        int count = rand.Next(1, 5);   //코인 1~4개 드랍
 
         float intervalAngle = 360 / count;  //드랍 아이템 사이의 각도
 
         //원형으로 몬스터 주위에 아이템 드랍시키기
         for (int i = 0; i < count; i++)
         {
-            float angle = i * intervalAngle +90;
+            float angle = i * intervalAngle + 90;
             float radian = angle * Mathf.Deg2Rad;
             float x = Mathf.Cos(radian);
             float y = Mathf.Sin(radian);
@@ -142,7 +156,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    //내부 함수로 부르는게 아니라 유니티 인스펙터에서 사용하기 위해 public으로 선언
+    //내부 함수로 부르는게 아니라 유니티 애니메이터에서 사용하기 위해 public으로 선언
     void Death()    
     {
         gameObject.SetActive(false);

@@ -12,6 +12,7 @@ TagManager:
   - Item_powerup
   - Enemy
   - weppon
+  - Ending
   layers:
   - Default
   - TransparentFX

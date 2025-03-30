@@ -15,9 +15,9 @@ public class Bullet : MonoBehaviour
     private Transform nearestTarget;
 
     /// <summary>
-    /// 총알의 데미지 및 확률을 초기화하는 메서드
+    /// 총알의 데미지를 초기화하는 메서드
     /// </summary>
-    public void init(int damage, bool isTracking)
+    public void init(float damage, float speed, bool isTracking)
     {
         this.damage = damage;
         this.isTracking = isTracking;
