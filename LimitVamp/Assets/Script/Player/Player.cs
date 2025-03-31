@@ -23,12 +23,14 @@ public class Player : MonoBehaviour
     public Slider HPBar;
 
     private float damageCooldown = 0.1f; // 체력이 깎이는 간격 (1초)
-    private float lastDamageTime; // 마지막으로 피해를 받은 시간
+    private float lastDamageTime = 0f; // 마지막으로 피해를 받은 시간
     private bool isTakingDamage = false; // 적과 충돌 여부
 
     private Color originalColor; // 원래 색상 저장
 
     public GameObject dead;//죽었을때 나오는 오브젝트
+
+    private bool winning = false;
 
 
     void Awake()
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour
         float moveX = moveSpeed * Time.deltaTime * Input.GetAxis("Horizontal");//좌우 속도지정
         float moveY = moveSpeed * Time.deltaTime * Input.GetAxis("Vertical");//상하 속도 지정
 
+        HPBar.value = HP / MHP;
 
         transform.Translate(moveX, moveY, 0); //이동
 
@@ -158,7 +161,7 @@ public class Player : MonoBehaviour
         }
         return result;//result담아 반환
     }
-    private void OnTriggerEnter2D(Collider2D collision)//아이템과 충돌했을때
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
@@ -168,9 +171,17 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
-        {
-            isTakingDamage = false; // 적과 충돌 해제
-        }
+        isTakingDamage = false; // 적과 충돌 해제
     }
+
+
+    public void setWin()
+    {
+        winning = true;
+    }
+    public bool getWin()
+    {
+        return winning;
+    }
+
 }

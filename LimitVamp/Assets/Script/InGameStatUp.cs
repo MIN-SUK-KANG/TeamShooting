@@ -29,7 +29,7 @@ public class InGameStatUp : MonoBehaviour
     }
     public void Weppon_Speed_Up()//무기 공격속도
     {
-        launcher.Shooting_interval -= 0.2f;
+        launcher.Shooting_interval -= 0.4f;
         if (launcher.Shooting_interval < 0.1f) launcher.Shooting_interval = 0.1f;
         EditorUtility.SetDirty(launcher);
         Debug.Log("wepponspeedup");

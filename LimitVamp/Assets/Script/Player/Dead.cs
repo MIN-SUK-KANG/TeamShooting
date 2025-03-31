@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class Dead : MonoBehaviour
@@ -14,6 +15,12 @@ public class Dead : MonoBehaviour
         if (player == null)
         {
             BadEnding();
+        }
+        if (player != null && player.gameObject.GetComponent<Player>().getWin())
+        {
+            GoodEnding();
+            GameObject.Find("SpawnManager").SetActive(false);
+            GameObject.FindGameObjectsWithTag("Enemy").ToList().ForEach(x => x.SetActive(false));
         }
     }
 

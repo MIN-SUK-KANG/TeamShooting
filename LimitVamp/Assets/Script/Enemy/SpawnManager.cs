@@ -38,13 +38,14 @@ public class SpawnManager : MonoBehaviour
                     Spawn();
                     break;
                 case true : //보스 스폰 이후(bossChk : true) 레벨 보정
+                    level = 2;
                     break;
             }
         }
 
         //레벨을 기준으로 스폰 몬스터 수준 결정
         //몬스터 스폰 최소시간보다 타이머가 더 크면 스폰, 타이머 리셋
-        if (timer > spawnData[level].spawnTime)
+        if (timer > spawnData[level].spawnTime && bossChk == false)
         {
             Debug.Log($"현재 난이도 {level}");
             timer = 0;
@@ -53,6 +54,7 @@ public class SpawnManager : MonoBehaviour
     }
     public void Spawn()
     {
+        if (bossChk) spawnData[level].boss = true;
         //GameManager에 존재하는 PoolManager의 0번 풀에서 비활성화된 오브젝트를 가져옴.
         //아마 0번 풀이 몬스터 목록으로 인스펙터에서 정의될듯.
         GameObject enemy = GameManager.instance.pool.Get(0);
@@ -70,4 +72,5 @@ public class SpawnData
     public int spriteIndex;
     public int monsterHp;
     public float speed;
+    public bool boss;
 }

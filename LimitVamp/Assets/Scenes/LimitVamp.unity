@@ -682,26 +682,37 @@ MonoBehaviour:
     spriteIndex: 0
     monsterHp: 4
     speed: 2
+    boss: 0
   - spawnTime: 2
     spriteIndex: 1
     monsterHp: 6
     speed: 3
+    boss: 0
   - spawnTime: 2
     spriteIndex: 2
     monsterHp: 10
     speed: 1
+    boss: 0
   - spawnTime: 4
     spriteIndex: 3
     monsterHp: 16
     speed: 2
+    boss: 0
   - spawnTime: 5
     spriteIndex: 4
     monsterHp: 24
     speed: 1
+    boss: 0
+  - spawnTime: 4
+    spriteIndex: 5
+    monsterHp: 20
+    speed: 1
+    boss: 0
   - spawnTime: 1
     spriteIndex: 5
     monsterHp: 100
     speed: 1
+    boss: 1
 --- !u!4 &402885028
 Transform:
   m_ObjectHideFlags: 0
@@ -2022,7 +2033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 282708256}
-  launcher: {fileID: 0}
+  launcher: {fileID: 1919951237}
   bullet: {fileID: 64027935816136405, guid: 2eda48748d1ddfd4884fa42ad8b8eadb, type: 3}
   UI_store: {fileID: 1849647694}
 --- !u!1 &1227808550
@@ -2435,6 +2446,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4558560765718516830, guid: 8456643055266f347897fc7ed660b279, type: 3}
   m_PrefabInstance: {fileID: 1919951235}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1919951237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6817616567635769871, guid: 8456643055266f347897fc7ed660b279, type: 3}
+  m_PrefabInstance: {fileID: 1919951235}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52bf8e20e6c36043b671fd4bfa6e598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1940735881
 GameObject:
   m_ObjectHideFlags: 0

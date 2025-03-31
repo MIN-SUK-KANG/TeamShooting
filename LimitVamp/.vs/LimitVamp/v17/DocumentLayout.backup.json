@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\player\\dead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\dead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\enemy\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemy\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|c:\\bootcamp\\teamproject\\1_shooting\\teamshooting\\limitvamp\\assets\\script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\script\\player\\dead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\player\\dead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9A9081F-43E1-CEA1-EAD0-8D88A30C4C1F}|Assembly-CSharp.csproj|C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\assets\\script\\player\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,37 +26,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 174,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dead.cs",
-              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Dead.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\Dead.cs",
-              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Dead.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\Dead.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T19:50:28.877Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpawnManager.cs",
+              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Enemy\\SpawnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Enemy\\SpawnManager.cs",
+              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Enemy\\SpawnManager.cs",
+              "RelativeToolTip": "Assets\\Script\\Enemy\\SpawnManager.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAywCEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T02:28:29.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Dead.cs",
+              "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Dead.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Player\\Dead.cs",
+              "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Dead.cs",
+              "RelativeToolTip": "Assets\\Script\\Player\\Dead.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T19:50:28.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Launcher.cs",
               "DocumentMoniker": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Launcher.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Player\\Launcher.cs",
               "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Launcher.cs",
               "RelativeToolTip": "Assets\\Script\\Player\\Launcher.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvx8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T18:11:40.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T18:11:40.08Z"
             },
             {
               "$type": "Document",
@@ -62,7 +77,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\Player\\Player.cs",
               "ToolTip": "C:\\BootCamp\\TeamProject\\1_Shooting\\TeamShooting\\LimitVamp\\Assets\\Script\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Script\\Player\\Player.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAUwHwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAYwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T18:39:09.992Z",
               "EditorCaption": ""

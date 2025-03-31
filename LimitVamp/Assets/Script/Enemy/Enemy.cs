@@ -3,6 +3,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
+using UI;
+using JetBrains.Annotations;
 
 public class Enemy : MonoBehaviour
 {
@@ -28,6 +30,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject item; //아이템 오브젝트. 코인.
     private float distance = 1f;
     private float spread = 20f;
+
+    //스테이지 클리어
+    public bool StageClearCheck = false;
 
     void Awake()
     {
@@ -55,6 +60,9 @@ public class Enemy : MonoBehaviour
         ani.runtimeAnimatorController = animContrl[data.spriteIndex];
         monsterMaxHp = monsterHp = data.monsterHp;
         speed = data.speed;
+
+        //보스 여부 체크
+        if (data.boss == true) StageClearCheck = true;
 
         //몬스터 크기에 따라 콜라이더 크기 조정
         if (spriter.size.x < spriter.size.y) coll.radius = spriter.size.x;
@@ -104,10 +112,10 @@ public class Enemy : MonoBehaviour
     
     public void Damage(float damage)
     {
-        //총알일 경우 피해를 입고 넉백 코루틴 실행
+        //총알일 경우 피해를 입고, 보스가 아니면 넉백 코루틴 실행
         monsterHp -= damage;
         HPBar.value = monsterHp / monsterMaxHp;
-        StartCoroutine("KnockBack");
+        if (StageClearCheck == false) StartCoroutine("KnockBack");
 
 
         //피격 피해에 사망하지 않으면 피격 모션 실행
@@ -157,8 +165,10 @@ public class Enemy : MonoBehaviour
     }
 
     //내부 함수로 부르는게 아니라 유니티 애니메이터에서 사용하기 위해 public으로 선언
-    void Death()    
+    void Death()
     {
         gameObject.SetActive(false);
+        if(StageClearCheck == true)
+            target.GetComponent<Player>().setWin();
     }
 }

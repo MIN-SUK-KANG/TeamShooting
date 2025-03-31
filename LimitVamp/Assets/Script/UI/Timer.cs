@@ -34,30 +34,33 @@ namespace UI
                 else
                 {
                     elapsedTime += Time.deltaTime;
-
-                    if (elapsedTime >= RoundEndTime[Nround] && !shopDisplayed)
+                    if (Nround <= 3)
                     {
-                        Store.SetActive(true);
-                        shopDisplayed = true;
-
-                        Time.timeScale = 0;
-                        Nround += 1;
-                    }
-
-                    round.text = "Round: " + (Nround + 1);
-                    if (Bar_Time != null)
-                    {
-                        if (Nround == 0)
+                        if (elapsedTime >= RoundEndTime[Nround] && !shopDisplayed)
                         {
-                            Bar_Time.value = elapsedTime / RoundEndTime[0];
+                            Store.SetActive(true);
+                            shopDisplayed = true;
+
+                            Time.timeScale = 0;
+                            Nround += 1;
                         }
-                        else
+
+                        round.text = "Round: " + (Nround + 1);
+                        if (Bar_Time != null)
                         {
-                            Bar_Time.value = (elapsedTime - RoundEndTime[Nround - 1]) / (RoundEndTime[Nround] - RoundEndTime[Nround - 1]);
+                            if (Nround == 0)
+                            {
+                                Bar_Time.value = elapsedTime / RoundEndTime[0];
+                            }
+                            else
+                            {
+                                Bar_Time.value = (elapsedTime - RoundEndTime[Nround - 1]) / (RoundEndTime[Nround] - RoundEndTime[Nround - 1]);
+                            }
                         }
+                        TimeShow.text = GetTime();
                     }
-                    TimeShow.text = GetTime();
                 }
+
 
                 Score.text = "Score: " + Nscore;
             }
